@@ -1,0 +1,89 @@
+.header {
+    font-weight: var(--font-weight-500);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 24.5px;
+    padding-bottom: 24.5px;
+  
+  &_nav-list {
+    @extend %list;
+    margin-left: 93px;
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &_nav-link-current,
+  &_nav-link {
+    @extend %link;
+    line-height: var(--line-h-header);
+    letter-spacing: var(--letter-spacing-header-link);
+  }
+  
+  &_nav-link {
+    color: var(--main-text-color);
+    transition: color var(--transition-timing);
+
+    &:visited {
+        color: var(--main-text-color);
+    }
+
+    &:hover,
+    &:focus,
+    &:visited:hover,
+    &:visited:focus {
+      color: var(--blue-color);
+    }
+  
+    &-current {
+    color: var(--blue-color);
+    position: relative;
+  
+    &::after {
+        content: "";
+        position: absolute;
+        top: 45px;
+        right: 0;
+        width: 100%;
+        border-bottom: solid 4px var(--blue-color);
+        border-radius: 2px;
+      }
+    }
+  }
+  
+  &_contacts-list {
+    @extend %list;
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+  }
+  
+  &_contacts-item {
+    background-color: var(--main-color);
+    color: var(--text-gray-color);
+    cursor: pointer;
+  }
+  
+  &_contacts-item-link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-gray-color);
+    line-height: var(--line-h-header);
+    letter-spacing: var(--letter-spacing-header-link);
+    font-weight: var(--font-weight-500);
+    transition: color var(--transition-timing);
+
+    &:hover,
+    &:focus {
+      color: var(--blue-color);
+    }
+  }
+  
+  &_contacts-icon {
+    fill: currentColor;
+  }
+}

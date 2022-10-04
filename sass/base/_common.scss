@@ -1,0 +1,64 @@
+body {
+    background-color: var(--main-color);
+    font-family: var(--font-family-main);
+    color: var(--main-text-color);
+    letter-spacing: var(--letter-spacing-common);
+    font-size: var(--font-common);
+  }
+
+  .container {
+    // width: 1200px;
+    // padding: 0 15px;
+    // margin: 0 auto;
+
+    min-width: 320px;
+    max-width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (min-width: 768px) {
+      min-width: 768px;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+
+  .input-cursor {
+    cursor: pointer; 
+  }
+
+  .logo-studio,
+  .logo-web,
+  .logo-studio-light {
+    @extend %link;
+    font-family: 'Raleway', sans-serif;
+    font-weight: var(--font-weight-logo);
+    font-size: var(--font-logo);
+    line-height: calc(31/26);
+  }
+
+  .logo-studio {
+    color: var(--logo-studio-color);
+
+    &-dark {
+      @extend %link;
+      color: var(--main-color);
+    }
+  }
+  
+  .logo-web {
+    color: var(--blue-color);
+  }
+
+  .studio-section-name {
+    text-align: center;
+    font-weight: var(--font-weight-logo);
+    font-size: var(--font-studio-section-name);
+    line-height: var(--line-h-studio-section-name);
+    margin-bottom: 50px;
+  }

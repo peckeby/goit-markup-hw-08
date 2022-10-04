@@ -1,0 +1,92 @@
+:root {
+  --main-color: #fff;
+  --blue-color: #2196f3;
+  --main-text-color: #212121;
+  --text-gray-color: #757575;
+  --footer-background: #2f303a;
+  --button-background: #f5f4fa;
+  --logo-studio-color: #000000;
+  --icons-color: #afb1b8;
+  --border-color-valid: green;
+  --border-color-invalid: red;
+  --porfolio-card-overlay: rgba(33, 150, 243, 0.9);
+  --overlay-color: rgba(0, 0, 0, 0.2);
+  --background-color-icons: rgba(255, 255, 255, 0.1);
+  --background-color-wht-we-do: rgba(47, 48, 58, 0.8);
+
+  /* BORDERS */
+  --header-border-portfolio: 1px solid #ececec;
+  --border-modal-form: 1px solid rgba(33, 33, 33, 0.2);
+  --border-footer-form: 1px solid rgba(255, 255, 255, 0.3);
+  --border-project-card: 1px solid #eeeeee;
+  --border-modal-btn: solid 1px rgba(0, 0, 0, 0.1);
+
+  /* SHADOWS */
+  --main-background-shadow: rgba(47, 48, 58, 0.4);
+  --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --box-shadow-submit-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --portfolio-filter-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --project-hover-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  /* ANIMATION */
+  --transition-timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --btn-transform: scale(1.1);
+
+  /* TYPOGRAPHY */
+      
+        /* font-size */
+
+  --font-form-label-title: 12px;
+  --font-common: 14px;
+  --font-team-name: 16px; 
+  --font-project-overlay: 18px;
+  --font-modal-title: 20px;
+  --font-logo: 26px;
+  --font-studio-section-name: 36px;
+  --font-order-h1: 44px;
+
+        /* font-family*/
+
+  --font-family-logo:'Raleway', sans-serif;
+  --font-family-main: 'Roboto', sans-serif;
+
+        /* font-weight*/
+
+  --font-weight-500: 500;
+  --font-weight-logo: 700;
+  --font-name-section: 700;
+  --font-weight-order-h1: 900;
+
+        /* line-height*/
+
+  --line-h-header: calc(16.41/14);
+  // 1.2 
+  --line-h-logo: calc(35.96/26);
+  // 1.2
+  --line-h-studio-section-name: calc(42.19/36);
+  //1.2
+  --line-h-order-h1: calc(60/44);
+  // 1.36
+  --line-h-btn-submit: calc(30/16);
+  // 1.875
+  --line-h-modal-form-title: calc(23.44/20);
+  // 1.15
+  --line-h-label-title: calc(14/12);
+  //1.16
+  --line-h-checkbox-agreement: calc(24/14);
+  //1.8
+  --line-h-footer-form: calc(20/16);
+  // 1.25
+  --line-h-filter-list-item: calc(26/16);
+  // 1.625
+  --line-h-project-overlay-info: calc(28/18);
+  // 1.55
+  --line-h-project-name: calc(36/18);
+  // 2
+
+        /* letter-spacing*/
+
+  --letter-spacing-common: 0.03em;
+  --letter-spacing-header-link: 0.02em;
+  --letter-spacing-big: 0.06em;
+}

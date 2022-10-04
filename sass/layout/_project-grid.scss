@@ -1,0 +1,72 @@
+.projects {
+    @extend %section;
+    @extend %list;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 0;
+  }
+  
+  .projects_item {
+    display: block;
+    transition: box-shadow var(--transition-timing);
+    
+        &:hover,
+        &:focus-within {
+          box-shadow: var(--project-hover-shadow);
+        }
+    
+      &-link {
+        @extend %link;
+      }
+
+      &-link:hover .projects_item-overlay,
+      &-link:focus .projects_item-overlay {
+        transform: translatey(-100%);
+    }
+  
+      &-image {
+        position: relative;
+        overflow: hidden;
+    }
+  
+      &-overlay {
+        position: absolute;
+        transform: translatey(0);
+        width: 100%;
+        height: 294px;
+        padding: 63px 24px;
+        background-color: var(--porfolio-card-overlay);
+        transition: transform var(--transition-timing);
+  
+  
+      &-info {
+        color: var(--main-color);
+        font-size: var(--font-project-overlay);
+        line-height: var(--line-h-project-overlay-info);
+        }
+    } 
+  
+      &-info{
+        border-left: var(--border-project-card);
+        border-right: var(--border-project-card);
+        border-bottom: var(--border-project-card);
+        padding: 20px 24px;
+      }
+  
+      &-name {
+        font-weight: var(--font-name-section);
+        font-size: var(--font-project-overlay);
+        line-height: var(--line-h-project-name);
+        letter-spacing: var(--letter-spacing-big);
+        margin-bottom: 4px;
+      }
+  
+      &-type {
+        font-size: var( --font-team-name);
+        color: var(--text-gray-color);
+        line-height: var(--line-h-btn-submit);
+      }
+  }
+  

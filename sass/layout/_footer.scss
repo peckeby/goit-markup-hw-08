@@ -1,0 +1,56 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--footer-background);
+    background-size: cover;
+    background-repeat: repeat;
+  
+  &_container {
+    @extend .container;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  &_address {
+    color: var(--main-color);
+    font-style: normal;
+    line-height: var(--line-h-checkbox-agreement);
+    margin-top: 20px;
+  }
+
+  &_adress-list {
+    @extend %list;
+  }
+  
+  &_address-item {
+      margin-bottom: 9px;
+  }
+  
+  &_address-link {
+    @extend %link;
+    color: var(--main-color);
+    transition: color var(--transition-timing);
+
+    &:hover,
+    &:focus,
+    &:visited:hover,
+    &:visited:focus {
+      color: var(--blue-color);
+      opacity: 100%;
+      }
+  }
+  
+  &_address-contact,
+  &_address-contact:visited {
+    @extend %link;
+    color: var(--main-color);
+    opacity: 60%;
+    transition: color var(--transition-timing);
+
+      &:hover,
+      &:focus {
+    color: var(--blue-color);
+    opacity: 100%;
+    }
+  }
+}

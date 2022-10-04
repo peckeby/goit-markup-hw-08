@@ -1,0 +1,70 @@
+.form_checkbox-policy {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .checkbox {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    right: 95.4%;
+    top: 5px;
+    bottom: 4px;
+  }
+
+  .checkbox-icon-unchecked {
+    position: absolute;
+    right: 95.4%;
+    top: 5px;
+    bottom: 4px;
+    transition:
+    opacity var(--transition-timing);
+  }
+
+  .checkbox:checked + .checkbox-icon .checkbox-icon-unchecked {
+    opacity: 0;
+  }
+
+  .checkbox-icon-checked {
+    position: absolute;
+    right: 95.4%;
+    top: 5px;
+    bottom: 4px;
+    opacity: 0;
+    transition:
+    opacity var(--transition-timing);
+  }
+
+  .checkbox:checked + .checkbox-icon .checkbox-icon-checked {
+    opacity: 1;
+  }
+
+  .checkbox-agreement-text {
+    color: var(--text-gray-color);
+    line-height: var(--line-h-checkbox-agreement);
+    margin-left: 8.38px;
+    }
+
+  .checkbox-agreement-link {
+    @extend %link;
+    color: var(--blue-color);
+    text-decoration-line: underline;
+  }
+
+  .checkbox-btn-submit {
+    @extend .btn-submit;
+    @extend %input;
+    padding: 10px 52px;
+    margin-top: 30px;
+    box-shadow: var(--box-shadow-submit-btn);
+    transition: var(--transition-timing);
+
+    &:hover,
+    &:focus {
+        background-color: var(--blue-color);
+        color: var(--main-color);
+        transform: var(--btn-transform);
+    }
+}

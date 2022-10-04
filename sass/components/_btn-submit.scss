@@ -1,0 +1,24 @@
+.btn-submit {
+    @extend %input;
+    color: var(--main-color);
+    font-weight: var(--font-weight-logo);
+    font-size: var(--font-team-name);
+    letter-spacing: var(--letter-spacing-big);
+    line-height: var(--line-h-btn-submit);
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.25s;
+    display: inline;
+    align-items: center;
+    padding: 10px 32px;
+    transition: var(--transition-timing);
+  
+    &:hover,
+    &:focus {
+        color: var(--blue-color);
+        background-color: var(--main-color); 
+        transform: var(--btn-transform);
+     }
+  }

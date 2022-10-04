@@ -1,0 +1,34 @@
+.what-we-do {
+    @extend %section;
+    padding-top: 0;
+
+    &_img-list {
+      @extend %list;
+      display: inline-flex;
+      column-gap: 30px;
+    }
+  
+    &_img-item {
+      position: relative;
+  }
+  
+    &_img-label {
+      position: absolute;
+      height: 70px;
+      width: 100%;
+      bottom: 0;    
+      background: var(--background-color-wht-we-do);
+      text-transform: uppercase;
+      color: var(--main-color);
+      font-weight: var(--font-name-section);
+      line-height: var(--line-h-header);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}

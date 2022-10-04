@@ -1,0 +1,46 @@
+.our-team {
+    @extend %section;
+    background-color: var(--button-background);
+    background-size: cover;
+
+    &_card-list {
+      @extend %list;
+      display: flex;
+      gap: 30px;
+    }
+  
+    &_card {
+      text-align: center;
+      background-color: var(--main-color);
+      box-shadow: var(--box-shadow);
+      border-radius: 4px;
+      transition: var(--transition-timing);
+    
+    
+      &:hover,
+      &:focus-within {
+        transform: scale(1.06);
+      }
+
+      &-info {
+        padding: 30px 32px;
+      }
+      
+      &-name,
+      &-position {
+        font-size: var(--font-team-name);
+        line-height: var(--line-h-btn-submit);
+        align-self: flex-end;
+      }
+    
+      &-name {
+        font-weight: var(--font-weight-500);
+        margin-bottom: 10px;
+      }
+      
+      &-position {
+        color: var(--text-gray-color);
+        margin-bottom: 16px;
+      }
+    }
+  }

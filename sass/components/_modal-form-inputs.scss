@@ -1,0 +1,58 @@
+.form_label-input-area {
+    display: flex;
+    transition: var(--transition-timing);
+    width: 100%;
+    
+    &:focus-within {
+        color: var(--blue-color);
+      }
+  }
+
+  .form_label-input {
+    @extend %input;
+    padding: 12px 12px 12px 40px;
+    border: var(--border-modal-form);
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    font-size: var(--font-common);
+    color: var(--main-text-color);
+    cursor: pointer;
+    transition: border-color var(--transition-timing);
+  
+    &:focus {
+        border-color: var(--blue-color);
+    }
+
+    &:not(:placeholder-shown):required:invalid {
+        border-color: var(--border-color-invalid);
+    }
+
+    &:not(:placeholder-shown):required:valid {
+        border-color: var(--border-color-valid);
+    }
+}
+
+  .form_label-icon{
+    fill: currentColor;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 418px;
+  }
+
+  .form_label-textarea {
+    padding: 12px 16px;
+    font-size: var(--font-form-label-title);
+    height: 120px;
+    width: 100%;
+    line-height: var(--line-h-label-title);
+    resize: none;
+    border: var(--border-modal-form);
+    border-radius: 4px;
+    transition: border-color var(--transition-timing);
+
+    &:focus {
+        border-color: var(--blue-color);
+  }
+}

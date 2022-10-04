@@ -1,0 +1,30 @@
+.modal_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-head-title{
+    font-weight: var(--font-name-section);
+    font-size: var(--font-modal-title);
+    line-height: 1.15;
+    margin-bottom: var(--line-h-modal-form-title);
+  }
+
+ .form_label {
+    margin-bottom: 10px;
+    position: relative;
+    color: var(--main-text-color);
+ }
+
+ .form_comment {
+  margin-bottom: 20px;
+ }
+
+  .form_label-title {
+    display: block;
+    text-align: start;
+    margin-bottom: 4px;
+    font-size: var(--font-form-label-title);
+    color: var(--text-gray-color);
+    line-height: var(--line-h-label-title);
+  }

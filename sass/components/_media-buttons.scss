@@ -1,0 +1,28 @@
+.icons-media-list {
+    @extend %list;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .media-button {
+    @extend %list;
+    width: 44px;
+    height: 44px;
+  }
+  
+  .link-media {
+    @extend %icon-link;
+    @extend %link-media;
+  
+      &:hover,
+      &:focus {
+        color: var(--main-color);
+        background: var(--blue-color);
+      }
+  }
+  
+  .icon-item {
+    fill: currentColor;
+  }
