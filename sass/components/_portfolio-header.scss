@@ -1,5 +1,8 @@
 .header-portfolio_border {
-    @extend .container;
-    @extend .header;
-    border-bottom: var(--header-border-portfolio);
-  }
+  border-bottom: var(--header-border-portfolio);
+}
+
+.header-portfolio {
+  @extend .container;
+  @extend .header;
+}

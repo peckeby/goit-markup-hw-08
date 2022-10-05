@@ -165,7 +165,7 @@ body {
   font-size: var(--font-common);
 }
 
-.container, .header-portfolio_border, .footer_container {
+.container, .header-portfolio, .footer_container {
   min-width: 320px;
   max-width: 480px;
   margin-left: auto;
@@ -174,12 +174,12 @@ body {
   padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
-  .container, .header-portfolio_border, .footer_container {
+  .container, .header-portfolio, .footer_container {
     min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container, .header-portfolio_border, .footer_container {
+  .container, .header-portfolio, .footer_container {
     max-width: 1200px;
   }
 }
@@ -254,7 +254,7 @@ button {
   cursor: pointer;
 }
 
-.header, .header-portfolio_border {
+.header, .header-portfolio {
   font-weight: var(--font-weight-500);
   display: -webkit-box;
   display: -ms-flexbox;
