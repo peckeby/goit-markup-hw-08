@@ -45,7 +45,13 @@
     color: var(--text-gray-color);
     line-height: var(--line-h-checkbox-agreement);
     margin-left: 8.38px;
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      font-size: var(--font-form-label-title);
+      line-height: var(14.06/12);
+      margin-left: 8px;
     }
+  }
 
   .checkbox-agreement-link {
     @extend %link;

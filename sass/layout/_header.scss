@@ -12,6 +12,11 @@
     display: inline-flex;
     align-items: center;
     gap: 50px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 87px;
+    }
+
   }
 
   &_nav-link-current,
@@ -58,12 +63,22 @@
     align-items: center;
     gap: 30px;
     margin-left: auto;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: block;
+    }
   }
   
   &_contacts-item {
     background-color: var(--main-color);
     color: var(--text-gray-color);
     cursor: pointer;
+
+  &:first-child {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+  }
   }
   
   &_contacts-item-link {
@@ -76,6 +91,11 @@
     letter-spacing: var(--letter-spacing-header-link);
     font-weight: var(--font-weight-500);
     transition: color var(--transition-timing);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: calc(14.06/12);
+    }
 
     &:hover,
     &:focus {

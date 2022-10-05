@@ -5,11 +5,34 @@
     background-size: cover;
     background-repeat: repeat;
   
-  &_container {
-    @extend .container;
-    display: flex;
-    align-items: baseline;
-  }
+    &_container {
+      @extend .container;
+      display: flex;
+      align-items: baseline;
+      
+
+      @media screen and (min-width: 768px) {
+       .footer-wrap {
+         display: flex;
+         align-items: baseline;
+         justify-content: space-between;
+       }
+
+      @media (max-width: 1199px) {
+        display: block;
+        text-align: center;
+        padding-right: 89px;
+        padding-left: 76px;
+        justify-content: space-around;
+        }
+      }
+
+      @media (max-width: 767px) {
+        display: block;
+        text-align: center;
+      }
+    }
+    
   
   &_address {
     color: var(--main-color);
@@ -20,10 +43,18 @@
 
   &_adress-list {
     @extend %list;
+
+    @media (max-width: 767px) {
+      margin-bottom: 60px;
+    }
   }
   
   &_address-item {
       margin-bottom: 9px;
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 8px;
+    }
   }
   
   &_address-link {

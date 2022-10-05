@@ -38,6 +38,12 @@
     transition:
     visibility var(--transition-timing),
     opacity var(--transition-timing);
+
+    @media (max-width: 1199px) {
+      max-width: 450px;
+      max-height: 609px;
+    }
+
  }
   
  .modal.active,

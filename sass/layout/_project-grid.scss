@@ -6,11 +6,26 @@
     flex-wrap: wrap;
     gap: 30px;
     padding-top: 0;
+
+    @media (max-width:1199px) {
+      margin-top: 30px;
+    }
+
+    @media (max-width:768px) {
+      margin-top: 40px;
+      display: block;
+    }
   }
   
   .projects_item {
     display: block;
     transition: box-shadow var(--transition-timing);
+
+  &:not(:last-child) {
+    @media (max-width:768px) {
+      margin-bottom: 30px;
+    }
+  }
     
         &:hover,
         &:focus-within {
@@ -19,6 +34,18 @@
     
       &-link {
         @extend %link;
+
+        @media (max-width: 767px) {
+          max-height: 440px;
+          }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+
+
       }
 
       &-link:hover .projects_item-overlay,
@@ -35,11 +62,21 @@
         position: absolute;
         transform: translatey(0);
         width: 100%;
-        height: 294px;
+        max-height: 370px;
         padding: 63px 24px;
         background-color: var(--porfolio-card-overlay);
         transition: transform var(--transition-timing);
-  
+
+        @media (max-width:768px) {
+          min-height: 294px;
+          padding-top: 77px;
+          padding-bottom: 77px;
+        }
+
+        @media (max-width:1199px) {
+          padding-top: 49px;
+          padding-bottom: 77px;
+        }
   
       &-info {
         color: var(--main-color);
@@ -48,11 +85,15 @@
         }
     } 
   
-      &-info{
+      &-info {
         border-left: var(--border-project-card);
         border-right: var(--border-project-card);
         border-bottom: var(--border-project-card);
         padding: 20px 24px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-grow: 1;
+        }
       }
   
       &-name {
@@ -69,4 +110,3 @@
         line-height: var(--line-h-btn-submit);
       }
   }
-  

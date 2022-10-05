@@ -5,6 +5,18 @@
     @extend %list;
     display: flex;
     gap: 30px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      min-width: 738px;
+      justify-content: center;
+    }
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 450px;
+    }
   }
   
 .partners_item-link {
@@ -18,6 +30,16 @@
     justify-content: center;
     border-radius: 4px;
     transition: var(--transition-timing);
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: calc((100% - 60px) / 3);
+      min-width: 226px;
+    }
+
+    @media (max-width: 767px) {
+      flex-basis: calc((100% - 30px) / 2);
+      min-width: 210px;
+    }
 
     &:hover,
     &:focus {

@@ -7,6 +7,15 @@
       @extend %list;
       display: flex;
       gap: 30px;
+
+      @media (max-width: 1199px) {
+      flex-wrap: wrap;
+      max-width: 738px;
+      }
+
+      @media (max-width: 767px) {
+        display: block;
+      }
     }
   
     &_card {
@@ -15,6 +24,17 @@
       box-shadow: var(--box-shadow);
       border-radius: 4px;
       transition: var(--transition-timing);
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-basis: calc((100% - 30px) / 2);
+        margin-bottom: 0;
+      }
+
+      &:not(:last-child) {
+        @media (max-width: 767px) {
+        margin-bottom: 30px;
+        }
+      }
     
     
       &:hover,
@@ -24,12 +44,21 @@
 
       &-info {
         padding: 30px 32px;
+
+        @media (max-width: 1199px) {
+          padding: 30px 74px 24px;
+        }
+
+        @media (max-width: 767px) {
+          padding-left: 122px;
+          padding-right: 122px;
+        }
       }
       
       &-name,
       &-position {
         font-size: var(--font-team-name);
-        line-height: var(--line-h-btn-submit);
+        line-height: calc(18.75/16);
         align-self: flex-end;
       }
     

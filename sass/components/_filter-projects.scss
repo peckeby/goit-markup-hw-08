@@ -6,6 +6,13 @@
     justify-content: center;
     gap: 8px;
     padding-bottom: 0;
+
+    @media (max-width:767px) {
+    flex-wrap: wrap;
+    max-width: 326px;
+    justify-content: flex-start;
+    }
+
   
   &_item {
     @extend %input;
