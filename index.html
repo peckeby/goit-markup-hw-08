@@ -223,30 +223,45 @@
         <h2 class="studio-section-name">Чим ми займаємося</h2>
           <ul class="what-we-do_img-list">
             <li class="what-we-do_img-item aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="200">
-              <img
-                src="./images/img_main_1.jpg"
-                alt="картинка 1"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/what-we-do/img_1-370.jpg 1x, ./images/what-we-do/img_1_740.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                src="./images/what-we-do/img_1-370.jpg"
+                alt="Картинка 1"
+                />
+              </picture>
               <p class="what-we-do_img-label">Десктопні додатки</p>
             </li>
             <li class=".what-we-do_img-item aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="300">
-              <img
-                src="./images/img_main_2.jpg"
-                alt="картинка 2"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/what-we-do/img_2-370.jpg 1x, ./images/what-we-do/img_2_740.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                src="./images/what-we-do/img_2-370.jpg"
+                alt="Картинка 2"
+                />
+              </picture>
               <p class="what-we-do_img-label">Мобільні додатки</p>
             </li>
             <li class=".what-we-do_img-item aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="400">
-              <img
-                src="./images/img_main_3.jpg"
-                alt="картинка 3"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/what-we-do/img_3-370.jpg 1x, ./images/what-we-do/img_3_740.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                src="./images/what-we-do/img_3-370.jpg"
+                alt="Картинка 3"
+                />
+              </picture>
               <p class="what-we-do_img-label">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -257,12 +272,20 @@
           <h2 class="studio-section-name">Наша команда</h2>
           <ul class="our-team_card-list">
             <li class="our-team_card">
-              <img
-                src="./images/team/img_d-270.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+                <img
+                  srcset="
+                    ./images/team/img_d-270.jpg 270w,
+                    ./images/team/img_d-540.jpg 540w,
+                    ./images/team/img-t-team-1-354.jpg 354w,
+                    ./images/team/img-t-team-1-708.jpg 708w,
+                    ./images/team/img_m-team-1-450.jpg 450w,
+                    ./images/team/img_m-team-1-900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px)
+                  450px, 100vw"
+                  src="./images/team/img_d-270.jpg"
+                  alt="Ігор Дем'яненко"
+                />
               <div class="our-team_card-info">
                 <h3 class="our-team_card-name">Ігор Дем'яненко</h3>
                 <p class="our-team_card-position">Product Designer</p>
@@ -316,11 +339,19 @@
             </li>
             <li class="our-team_card">
               <img
-                src="./images/team/img_d-270-1.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              srcset="
+                ./images/team/img_d-270-1.jpg 270w,
+                ./images/team/img_d-540-1.jpg 540w,
+                ./images/team/img-t-team-2-354.jpg 354w,
+                ./images/team/img-t-team-2-708.jpg 708w,
+                ./images/team/img_m-team-2-450.jpg 450w,
+                ./images/team/img_m-team-2-900.jpg 900w
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px)
+              450px, 100vw"
+              src="./images/team/img_d-270-1.jpg"
+              alt="Ольга Рєпіна"
+            />
               <div class="our-team_card-info">
                 <h3 class="our-team_card-name">Ольга Рєпіна</h3>
                 <p class="our-team_card-position">Frontend Developer</p>
@@ -374,11 +405,19 @@
             </li>
             <li class="our-team_card">
               <img
-                src="./images/team/img_d-270-2.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              srcset="
+                ./images/team/img_d-270-2.jpg 270w,
+                ./images/team/img_d-540-2.jpg 540w,
+                ./images/team/img-t-team-3-354.jpg 354w,
+                ./images/team/img-t-team-3-708.jpg 708w,
+                ./images/team/img_m-team-3-450.jpg 450w,
+                ./images/team/img_m-team-3-900.jpg 900w
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px)
+              450px, 100vw"
+              src="./images/team/img_d-270-2.jpg"
+              alt="Микола Тарасов"
+            />
               <div class="our-team_card-info">
                 <h3 class="our-team_card-name">Микола Тарасов</h3>
                 <p class="our-team_card-position">Marketing</p>
@@ -431,12 +470,20 @@
               </div>
             </li>
             <li class="our-team_card">
-              <img
-                src="./images/team/img_d-270-3.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+                <img
+                  srcset="
+                    ./images/team/img_d-270-3.jpg 270w,
+                    ./images/team/img_d-540-3.jpg 540w,
+                    ./images/team/img-t-team-4-354.jpg 354w,
+                    ./images/team/img-t-team-4-708.jpg 708w,
+                    ./images/team/img_m-team-4-450.jpg 450w,
+                    ./images/team/img_m-team-4-900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px)
+                  450px, 100vw"
+                  src="./images/team/img_d-270-3.jpg"
+                  alt="Михайло Єрмаков"
+                />
               <div class="our-team_card-info">
                 <h3 class="our-team_card-name">Михайло Єрмаков</h3>
                 <p class="our-team_card-position">UI Designer</p>

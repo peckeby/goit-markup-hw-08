@@ -381,6 +381,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
@@ -404,6 +407,8 @@ button {
   transition: -webkit-box-shadow var(--transition-timing);
   transition: box-shadow var(--transition-timing);
   transition: box-shadow var(--transition-timing), -webkit-box-shadow var(--transition-timing);
+  min-width: 370px;
+  max-width: 370px;
 }
 @media (max-width: 768px) {
   .projects_item:not(:last-child) {
@@ -481,6 +486,7 @@ button {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    max-width: 354px;
   }
 }
 .projects_item-name {
@@ -502,8 +508,8 @@ button {
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-background-shadow)), to(var(--main-background-shadow)));
-  background-image: linear-gradient(to bottom, var(--main-background-shadow), var(--main-background-shadow));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-background-shadow)), to(var(--main-background-shadow))), url("../images/order-bckg/img-d@1x.jpg");
+  background-image: linear-gradient(to bottom, var(--main-background-shadow), var(--main-background-shadow)), url("../images/order-bckg/img-d@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -541,6 +547,31 @@ button {
   }
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order {
+    background-image: url(../images/order-bckg/img-d@2x.jpg);
+  }
+}
+@media screen and (min-width: 481px) {
+  .order {
+    background-image: url(../images/order-bckg/img-m@1x.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: url(../images/order-bckg/img-m@2x.jpg);
+  }
+}
+@media screen and (min-width: 769px) {
+  .order {
+    background-image: url(../images/order-bckg/img_t@1x.jpg);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: url(../images/order-bckg/img_t@2x.jpg);
+  }
+}
 .advantages_list {
   display: -webkit-box;
   display: -ms-flexbox;
