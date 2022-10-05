@@ -24,8 +24,8 @@
   </head>
   <body>
     <header>
-      <div class="container header">
-        <a href="./index.html" class="logo-studio"><span class="logo-web">Web</span>Studio</span></a>
+      <div class="header">
+        <a href="./index.html" class="logo-studio" aria-label="Studio logo"><span class="logo-web">Web</span>Studio</span></a>
         <nav class="header_nav">
           <ul class="header_nav-list">
             <li>
@@ -57,6 +57,14 @@
             </a>
           </li>
         </ul>
+        <button type="button" 
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu">
+            <svg width="40px" height="40px" class="menu-icon">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -643,8 +651,42 @@
         </div>
       </div>
     </footer>
+    <!-- MODAL -->
     <div class="overlay js-overlay-modal"></div>
+    <!-- MOB MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40px" height="40px" class="menu-icon">
+          <use href="./images/icons.svg#icon-menu-close"></use>
+        </svg>
+        </svg>
+      </button>
+      <ul class="mobile-menu-nav">
+        <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link-current">Студія</a></li>
+        <li class="menu-nav__item"><a href="." class="menu-nav__link">Портфоліо</a></li>
+        <li class="menu-nav__item"><a href="" class="menu-nav__link">Контакти</a></li>
+      </ul>
+      <ul class="mobile-menu-contacts">
+        <li class="menu-nav__item"><a href="#" class="menu-contact__phone">+38 096 111 11 11</a></li>
+        <li><a href="" class="menu-contact__mail">info@devstudio.com</a></li>
+      <ul class="mobile-menu-social">
+        <li class="social__item"><a href="#" class="social__link">Instagram</a></li>
+        <span class="vertical-line"></span>
+        <li class="social__item"><a href="#" class="social__link">Twitter</a></li>
+        <span class="vertical-line"></span>
+        <li class="social__item"><a href="#" class="social__link">Facebook</a></li>
+        <span class="vertical-line"></span>
+        <li class="social__item"><a href="#" class="social__link">LinkedIn</li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/inputmask.min.js"></script>
     <script src="./js/mask.js"></script>

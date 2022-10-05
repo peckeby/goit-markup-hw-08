@@ -33,5 +33,11 @@
         line-height: calc(42/26);
         max-width: 360px;
       }
+
+      @media screen and (min-width: 300px) and (max-width: 419px){
+        font-size: 26px;
+        line-height: calc(42/26);
+        max-width: 300px;
+      } 
   }
 }
