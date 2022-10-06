@@ -21,8 +21,7 @@
   .projects_item {
     display: block;
     transition: box-shadow var(--transition-timing);
-    min-width: 370px;
-    max-width: 370px;
+    width: auto;
 
   &:not(:last-child) {
     @media (max-width:768px) {

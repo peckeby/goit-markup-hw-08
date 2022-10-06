@@ -407,8 +407,7 @@ button {
   transition: -webkit-box-shadow var(--transition-timing);
   transition: box-shadow var(--transition-timing);
   transition: box-shadow var(--transition-timing), -webkit-box-shadow var(--transition-timing);
-  min-width: 370px;
-  max-width: 370px;
+  width: auto;
 }
 @media (max-width: 768px) {
   .projects_item:not(:last-child) {
@@ -521,6 +520,42 @@ button {
     max-height: 400px;
   }
 }
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order {
+    background-image: url(../images/order-bckg/img-d@2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) {
+  .order {
+    background-image: url(../images/order-bckg/img-m@1x.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: url(../images/order-bckg/img-m@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .order {
+    background-image: url(../images/order-bckg/img_t@1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: url(../images/order-bckg/img_t@2x.jpg);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .order {
+    background-image: url(../images/order-bckg/img-m@1x.jpg);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 479px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 479px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: url(../images/order-bckg/img-m@2x.jpg);
+  }
+}
 .order_h1 {
   font-weight: var(--font-weight-order-h1);
   font-size: var(--font-order-h1);
@@ -547,31 +582,6 @@ button {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .order {
-    background-image: url(../images/order-bckg/img-d@2x.jpg);
-  }
-}
-@media screen and (min-width: 481px) {
-  .order {
-    background-image: url(../images/order-bckg/img-m@1x.jpg);
-  }
-}
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
-  .order {
-    background-image: url(../images/order-bckg/img-m@2x.jpg);
-  }
-}
-@media screen and (min-width: 769px) {
-  .order {
-    background-image: url(../images/order-bckg/img_t@1x.jpg);
-  }
-}
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
-  .order {
-    background-image: url(../images/order-bckg/img_t@2x.jpg);
-  }
-}
 .advantages_list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -970,6 +980,12 @@ button {
   .btn-submit, .footer-subscribe__btn, .checkbox-btn-submit {
     padding-left: 24px;
     padding-right: 24px;
+  }
+}
+@media screen and (max-width: 419px) {
+  .btn-submit, .footer-subscribe__btn, .checkbox-btn-submit {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .btn-submit:hover, .footer-subscribe__btn:hover, .checkbox-btn-submit:hover, .btn-submit:focus, .footer-subscribe__btn:focus, .checkbox-btn-submit:focus {
@@ -1566,6 +1582,13 @@ button {
   line-height: 1.172;
   font-weight: var(--font-weight-500);
 }
+@media screen and (max-width: 380px) {
+  .menu-nav__link,
+.menu-nav__link-current {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
 
 .menu-nav__link-current {
   color: var(--blue-color);
@@ -1581,6 +1604,12 @@ button {
   font-weight: var(--font-weight-500);
   color: var(--blue-color);
 }
+@media screen and (max-width: 371px) {
+  .menu-contact__phone {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+}
 
 .menu-contact__mail {
   font-weight: var(--font-weight-500);
@@ -1588,6 +1617,12 @@ button {
   line-height: var(28/24);
   letter-spacing: 0.02em;
   color: var(--text-gray-color);
+}
+@media screen and (max-width: 371px) {
+  .menu-contact__mail {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .mobile-menu-social {
@@ -1597,13 +1632,24 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 64px;
+  row-gap: 10px;
 }
 
 .social__item:not(:last-child) {
   margin-right: 10px;
 }
+@media screen and (max-width: 449px) {
+  .social__item:not(:last-child) {
+    margin-right: 5px;
+  }
+}
 .social__item:not(:first-child) {
   margin-left: 10px;
+}
+@media screen and (max-width: 449px) {
+  .social__item:not(:first-child) {
+    margin-left: 5px;
+  }
 }
 
 .social__link {
@@ -1612,6 +1658,16 @@ button {
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: var(--blue-color);
+}
+@media screen and (max-width: 414px) {
+  .social__link {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 414px) and (max-width: 414px) {
+  .social__link {
+    font-size: 14px;
+  }
 }
 
 .vertical-line {

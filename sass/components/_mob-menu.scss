@@ -54,6 +54,11 @@
     font-size: 40px;
     line-height: calc(46.88/40);
     font-weight: var(--font-weight-500);
+
+    @media screen and (max-width: 380px) {
+        font-size: 30px;
+        line-height: 1;
+    }
 }
 
 .menu-nav__link-current {
@@ -71,6 +76,12 @@
     line-height: calc(39.84/34);
     font-weight: var(--font-weight-500);
     color: var(--blue-color);
+
+    @media screen and (max-width: 371px) {
+        font-size: 25px;
+        line-height: calc(35/25);
+    }
+
 }
 
 .menu-contact__mail {
@@ -80,23 +91,41 @@
     line-height: var(28/24);
     letter-spacing: 0.02em;
     color: var(--text-gray-color);
+
+    @media screen and (max-width: 371px) {
+        font-size: 20px;
+        line-height: calc(24/20);
+    }
 }
 
 .mobile-menu-social {
     @extend %list;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 64px;;
+    margin-top: 64px;
+    row-gap: 10px;
 }
 
 .social__item {
+
     &:not(:last-child) {
         margin-right: 10px;
-    }
+
+        @media screen and (max-width: 449px) {
+            margin-right: 5px;
+                }
+            }
+        
+    
 
     &:not(:first-child) {
         margin-left: 10px;
-    }
+
+        @media screen and (max-width: 449px) {
+            margin-left: 5px;
+                }
+            }
+    
 }
 
 .social__link {
@@ -106,7 +135,15 @@
     line-height: calc(22/18);
     letter-spacing: 0.02em;
     color: var(--blue-color);
+
+    @media screen and (max-width: 414px) {
+        font-size: 16px;
+    
+     @media screen and (max-width: 414px) {
+        font-size: 14px;
+     }
     }
+}
 
 .vertical-line {
         height: 22px;
