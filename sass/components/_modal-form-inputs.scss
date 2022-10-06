@@ -46,6 +46,11 @@
     @media (max-width: 767px) {
       right: 340px;
     }
+
+    @media (max-width: 449px) {
+      right: auto;
+      left: 10px;
+    }
   }
 
   .form_label-textarea {

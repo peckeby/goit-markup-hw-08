@@ -1161,6 +1161,12 @@ button {
     right: 340px;
   }
 }
+@media (max-width: 449px) {
+  .form_label-icon {
+    right: auto;
+    left: 10px;
+  }
+}
 
 .form_label-textarea {
   padding: 12px 16px;
