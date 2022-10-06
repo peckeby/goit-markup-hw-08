@@ -53,6 +53,10 @@
           padding-left: 122px;
           padding-right: 122px;
         }
+
+        @media (max-width: 479px) {
+         padding: 30px 70px 24px; 
+        }
       }
       
       &-name,

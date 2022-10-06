@@ -21,6 +21,11 @@
         color: var(--main-color);
         background: var(--blue-color);
       }
+
+      @media (max-width: 479px) {
+        width: 44px;
+        height: 100%;
+      }
   }
   
   .icon-item {

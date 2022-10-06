@@ -52,6 +52,11 @@
       &-link:focus .projects_item-overlay {
         transform: translatey(-100%);
     }
+    &-link:active .projects_item-overlay {
+      @media (max-width: 1199px) {
+      transform: translatey(-100%);
+    }
+  }
   
       &-image {
         position: relative;
@@ -76,6 +81,11 @@
         @media (max-width: 1199px) {
           padding-top: 49px;
           padding-bottom: 77px;
+        }
+
+        @media (max-width: 479px) {
+          padding-top: 80px;
+          padding-bottom: 50px;
         }
   
       &-info {
