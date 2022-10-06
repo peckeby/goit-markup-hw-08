@@ -271,6 +271,11 @@ button {
   padding-bottom: 24.5px;
 }
 @media screen and (max-width: 767px) {
+  .header, .header-portfolio {
+    max-width: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
   .header_nav {
     display: none;
   }
@@ -538,37 +543,48 @@ button {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .order {
-    background-image: url(../images/order-bckg/img-d@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-background-shadow)), to(var(--main-background-shadow))), url(../images/order-bckg/img-d@2x.jpg);
+    background-image: linear-gradient(to bottom, var(--main-background-shadow), var(--main-background-shadow)), url(../images/order-bckg/img-d@2x.jpg);
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .order {
-    background-image: url(../images/order-bckg/img-m@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-background-shadow)), to(var(--main-background-shadow))), url(../images/order-bckg/img-m@1x.jpg);
+    background-image: linear-gradient(to bottom, var(--main-background-shadow), var(--main-background-shadow)), url(../images/order-bckg/img-m@1x.jpg);
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .order {
-    background-image: url(../images/order-bckg/img-m@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-background-shadow)), to(var(--main-background-shadow))), url(../images/order-bckg/img-m@2x.jpg);
+    background-image: linear-gradient(to bottom, var(--main-background-shadow), var(--main-background-shadow)), url(../images/order-bckg/img-m@2x.jpg);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .order {
-    background-image: url(../images/order-bckg/img_t@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-background-shadow)), to(var(--main-background-shadow))), url(../images/order-bckg/img_t@1x.jpg);
+    background-image: linear-gradient(to bottom, var(--main-background-shadow), var(--main-background-shadow)), url(../images/order-bckg/img_t@1x.jpg);
+    height: 400px;
+    padding: 118px 0;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .order {
-    background-image: url(../images/order-bckg/img_t@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-background-shadow)), to(var(--main-background-shadow))), url(../images/order-bckg/img_t@2x.jpg);
+    background-image: linear-gradient(to bottom, var(--main-background-shadow), var(--main-background-shadow)), url(../images/order-bckg/img_t@2x.jpg);
+    height: 400px;
+    padding: 118px 0;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .order {
-    background-image: url(../images/order-bckg/img-m@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-background-shadow)), to(var(--main-background-shadow))), url(../images/order-bckg/img-m@1x.jpg);
+    background-image: linear-gradient(to bottom, var(--main-background-shadow), var(--main-background-shadow)), url(../images/order-bckg/img-m@1x.jpg);
   }
 }
 @media screen and (min-width: 320px) and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 479px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 479px) and (min-resolution: 2dppx) {
   .order {
-    background-image: url(../images/order-bckg/img-m@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-background-shadow)), to(var(--main-background-shadow))), url(../images/order-bckg/img-m@2x.jpg);
+    background-image: linear-gradient(to bottom, var(--main-background-shadow), var(--main-background-shadow)), url(../images/order-bckg/img-m@2x.jpg);
   }
 }
 .order_h1 {
