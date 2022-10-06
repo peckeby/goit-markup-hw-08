@@ -36,6 +36,7 @@
     
       &-link {
         @extend %link;
+        cursor: pointer;
 
         @media (max-width: 767px) {
           max-height: 440px;

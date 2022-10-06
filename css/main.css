@@ -418,6 +418,9 @@ button {
   -webkit-box-shadow: var(--project-hover-shadow);
           box-shadow: var(--project-hover-shadow);
 }
+.projects_item-link {
+  cursor: pointer;
+}
 @media (max-width: 767px) {
   .projects_item-link {
     max-height: 440px;
